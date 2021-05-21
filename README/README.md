@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/PJ1Draper.png)
+https://github.com/MisterDraper/ELK_Stack/blob/master/README/Images/PJ1Draper.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat or Metricbeat.
 
@@ -87,7 +87,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   Machine metrics, such as uptime.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) 
+
 
 | Name           | Function  | IP Address | Operating System |
 |----------------|-----------|------------|------------------|
@@ -136,7 +136,7 @@ The install-elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/PROJECT 1-PART 4 SCREENSHOT.png)
+https://github.com/MisterDraper/ELK_Stack/blob/master/README/Images/PROJECT%201-PART%204%20SCREENSHOT.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -157,12 +157,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the __filebeat-playbook.yml___ file to __/etc/ansible/roles___.
-- Update the __/etc/ansible/hosts___ file to include [webservers] and their correlating IP addresses and [elk] and it's correlation IP address
+- Update the __/etc/ansible/hosts___ file to include [webservers] and their correlating IP addresses and [elk] and it's correlating IP address.
+- Be certain that /etc/ansible/files/filebeat-config.yml and /etc/ansible/files/metricbeat-config.yml contain the private IP address of your ELK VM.
 - Run the playbook, and navigate to __http://publicIPaddress:5601/app/kibana__ to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
