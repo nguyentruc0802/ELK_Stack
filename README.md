@@ -1,10 +1,8 @@
-# ELK_Stack
-ELK Deployment
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/PJ1Draper.png)
+https://github.com/MisterDraper/ELK_Stack/blob/master/README/Images/PJ1Draper.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat or Metricbeat.
 
@@ -89,7 +87,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
   Machine metrics, such as uptime.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) 
+
 
 | Name           | Function  | IP Address | Operating System |
 |----------------|-----------|------------|------------------|
@@ -138,7 +136,7 @@ The install-elk.yml playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/PROJECT 1-PART 4 SCREENSHOT.png)
+https://github.com/MisterDraper/ELK_Stack/blob/master/README/Images/PROJECT%201-PART%204%20SCREENSHOT.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
